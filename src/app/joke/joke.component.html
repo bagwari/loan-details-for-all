@@ -1,0 +1,7 @@
+<h1>Jokes Categories</h1>
+
+<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let category of jokes">
+    <a matLine routerLink="/joke-category/{{category}}"><h2>{{ category | uppercase}}</h2></a>
+  </mat-grid-tile>
+</mat-grid-list>

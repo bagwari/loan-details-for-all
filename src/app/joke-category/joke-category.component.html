@@ -1,0 +1,15 @@
+<div class="button-row">
+  <a color="primary" [routerLink]="['/jokes']"><mat-icon>Back</mat-icon></a>
+</div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title *ngIf="joke.category">Joke category: {{joke.category[0]}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{joke.icon_url}}" alt="category joke">
+  <mat-card-content>
+    <p>
+      {{joke.value}}
+    </p>
+  </mat-card-content>
+</mat-card>
